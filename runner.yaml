@@ -1,0 +1,9 @@
+inputs:
+  - name: input1
+    prompt: TikTok URL
+    type: text
+
+launch:
+  program: app.py
+  args:
+    - '${input1}'
