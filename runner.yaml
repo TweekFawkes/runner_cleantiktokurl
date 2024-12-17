@@ -1,9 +1,12 @@
-inputs:
+runner:
+  name: Clean TikTok URL
+  description: Takes a TikTok URL as input and converts it into its privacy-friendly shortened form (tiktok.com/t/ format). The tool handles various TikTok URL formats (including tiktok.com, www.tiktok.com, and vm.tiktok.com domains) and extracts the video ID to generate a clean, shortened URL.
+  version: 0.0.2
+
+webform:
   - name: input1
     prompt: TikTok URL
     type: text
 
 launch:
-  program: app.py
-  args:
-    - '${input1}'
+  command: app.py ${input1}
